@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="new 2.css">
+  <title>Restaurant Menu</title>
+  
+</head>
+<body>
+
+
+
+  <header>
+    <h1>961RestoCafe</h1>
+  </header>
+  
+
+  <nav>
+    <ul>
+      <li><a href="#appetizers">Appetizers</a></li>
+      <li><a href="#main-courses">Main Courses</a></li>
+      <li><a href="#desserts">Desserts</a></li>
+    </ul>
+  </nav>
+  
+ 
+
+  <section id="appetizers" class="menu-section">
+    <h2>Appetizers</h2>
+	
+	<div class="menu-item" id="appetizer1">
+    <h3>Caprese Salad</h3>
+    <p>Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze.</p>
+    <p>$9.99</p>
+    <img src="pic1.jpg"/>
+    <button onclick="orderItem('Caprese Salad', 9.99)">Order</button>
+	
+	
+  </div>  
+
+  <div class="menu-item" id="appetizer2">
+    <h3>Stuffed Mushrooms</h3>
+    <p>Mushroom caps stuffed with a savory mixture of breadcrumbs and herbs.</p>
+    <p>$8.99</p>
+	<img src="pic2.jpg"/>
+    <button onclick="orderItem('Stuffed Mushrooms', 8.99)">Order</button>
+	
+	 
+  </div>
+
+  
+  <div class="menu-item" id="appetizer3">
+    <h3>Bruschetta</h3>
+    <p>Tomato, garlic, and basil on grilled bread, drizzled with olive oil.</p>
+    <p>$7.99</p>
+	<img src="pic3.jpg"/>
+    <button onclick="orderItem('Bruschetta', 7.99)">Order</button>
+	
+	 
+  </div>
+
+  <div class="menu-item" id="appetizer4">
+    <h3>Spinach Artichoke Dip</h3>
+    <p>Creamy dip with spinach, artichokes, and melted cheese.</p>
+    <p>$10.99</p>
+	<img src="pic4.jpg"/>
+    <button onclick="orderItem('Spinach Artichoke Dip', 10.99)">Order</button>
+	
+	 
+  </div>
+
+  
+  <div class="menu-item" id="appetizer5">
+    <h3>Shrimp Cocktail</h3>
+    <p>Chilled shrimp served with cocktail sauce.</p>
+    <p>$12.99</p>
+	<img src="pic5.jpg"/>
+    <button onclick="orderItem('Shrimp Cocktail', 12.99)">Order</button>
+	
+	 
+  </div>
+  </section>
+
+  <section id="main-courses" class="menu-section">
+    <h2>Main Courses</h2>
+
+  
+	<div class="menu-item" id="mainCourse1">
+    <h3>Grilled Salmon</h3>
+    <p>Grilled salmon fillet served with lemon butter sauce.</p>
+    <p>$17.99</p>
+	<img src="pic6.jpg"/>
+    <button onclick="orderItem('Grilled Salmon', 17.99)">Order</button>
+	
+	 
+  </div>
+
+  <div class="menu-item" id="mainCourse2">
+    <h3>Chicken Alfredo</h3>
+    <p>Grilled chicken breast with fettuccine pasta and Alfredo sauce.</p>
+    <p>$15.99</p>
+	<img src="pic7.jpg"/>
+    <button onclick="orderItem('Chicken Alfredo', 15.99)">Order</button>
+	
+	 
+  </div>
+
+  
+  <div class="menu-item" id="mainCourse3">
+    <h3>Filet Mignon</h3>
+    <p>Grilled filet mignon served with garlic mashed potatoes.</p>
+    <p>$24.99</p>
+	<img src="pic8.jpg"/>
+    <button onclick="orderItem('Filet Mignon', 24.99)">Order</button>
+	
+	 
+  </div>
+
+  <div class="menu-item" id="mainCourse4">
+    <h3>Vegetarian Stir-Fry</h3>
+    <p>Assorted vegetables stir-fried in a savory sauce.</p>
+    <p>$13.99</p>
+	<img src="pic9.jpg"/>
+    <button onclick="orderItem('Vegetarian Stir-Fry', 13.99)">Order</button>
+	
+	 
+  </div>
+
+  
+  <div class="menu-item" id="mainCourse5">
+    <h3>Lobster Ravioli</h3>
+    <p>Homemade lobster-filled ravioli with creamy tomato sauce.</p>
+    <p>$19.99</p>
+	<img src="pic10.jpg"/>
+    <button onclick="orderItem('Lobster Ravioli', 19.99)">Order</button>
+	
+	 
+  </div>
+  </section>
+
+  <section id="desserts" class="menu-section">
+    <h2>Desserts</h2>
+	
+	
+    <div class="menu-item" id="dessert1">
+      
+   
+	<div class="menu-item" id="dessert1">
+    <h3>Chocolate Lava Cake</h3>
+    <p>Warm chocolate cake with a gooey chocolate center.</p>
+    <p>$8.99</p>
+	<img src="pic11.jpg"/>
+    <button onclick="orderItem('Chocolate Lava Cake', 8.99)">Order</button>
+	
+	 
+  </div>
+
+  <div class="menu-item" id="dessert2">
+    <h3>Tiramisu</h3>
+    <p>Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese.</p>
+    <p>$10.99</p>
+	<img src="pic12.jpg"/>
+    <button onclick="orderItem('Tiramisu', 10.99)">Order</button>
+	
+	 
+  </div>
+
+ 
+  <div class="menu-item" id="dessert3">
+    <h3>New York Cheesecake</h3>
+    <p>Creamy cheesecake with a graham cracker crust.</p>
+    <p>$9.99</p>
+	<img src="pic13.jpg"/>
+    <button onclick="orderItem('New York Cheesecake', 9.99)">Order</button>
+	
+	 
+  </div>
+  </section> 
+  
+  
+ <!-- Ajoutez une section de commentaires -->
+      <!-- <div class="comments-section">
+        <h4>Comments:</h4>
+        <ul id="comments-appetizer1"></ul>
+        <textarea id="comment-input-appetizer1" placeholder="Leave a comment"></textarea>
+        <button onclick="addComment('appetizer1')">Submit Comment</button>
+      </div> -->
+ 
+ 
+
+   <script>
+    function orderItem(itemName, price) {
+      alert(`You ordered ${itemName} for $${price}`);
+    } 
+  </script>
+  
+
+<section id="cart">
+  <h2>Shopping Cart</h2>
+  <ul id="cartItems"></ul>
+  <p>Total: $<span id="carttotal">0.00</span></p>
+  <!-- <a href="checkout.html" button onclick="checkout()"class="tsp">Buy Now &#8594;</a> -->
+  <button onclick="checkout()"class="tsp">Buy Now &#8594;</button>
+  <div id="loading-spinner" class="hidden"></div>
+</section>
+
+
+
+<script>
+  const cartItems = [];
+  let total = 0;
+
+  function orderItem(itemName, price) {
+    const item = { name: itemName, price: price };
+    cartItems.push(item);
+    total += price;
+
+    updateCart();
+  }
+
+  function removeItem(item) {
+    const removedItem = cartItems.splice(item, 1)[0];
+    total -= removedItem.price;
+
+    updateCart();
+    alert(`Removed ${removedItem.name} from the cart.`);
+  }
+
+  function updateCart() {
+    const cartList = document.getElementById('cartItems');
+    const totalElement = document.getElementById('carttotal');
+
+    // Clear the current items in the cart
+    cartList.innerHTML = '';
+
+    // Populate the cart with the updated items
+    cartItems.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+	  
+	  const removeButton = document.createElement('button');
+      removeButton.textContent = 'Remove';
+      removeButton.onclick = () => removeItem(item);
+      li.appendChild(removeButton);
+
+      cartList.appendChild(li);
+    });
+	 // Update the total price
+    totalElement.textContent = total.toFixed(2);
+  }
+    
+	function showConfirmation(itemName, price) {
+    alert(`You ordered ${itemName} for $${price}. Item added to the cart.`);
+  }
+
+  // function removeItem(index) {
+  //   const removedItem = cartItems.splice(index, 1)[0];
+  //   total -= removedItem.price;
+
+  //   updateCart();
+  //   alert(`Removed ${removedItem.name} from the cart.`);
+  // }
+
+function checkout() {
+    if (cartItems.length === 0) {
+      alert('Your cart is empty. Add items before checking out.');
+    } else {
+      const confirmation = confirm(`Do you want to proceed to checkout? Total: $${total.toFixed(2)}`);
+      if (confirmation) {
+        alert(`Thank you for your order! Total: $${total.toFixed(2)}`);
+              
+        var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    
+     
+
+    var raw = JSON.stringify({
+      "cartItems": cartItems,
+      "totalPrice":total
+    });
+    
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+    
+    fetch('http://localhost:3000/addCheckout', requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
+
+      // Reset the cart after checkout
+      cartItems.length = 0;
+        total = 0;
+        updateCart();
+       window.location.href="http://127.0.0.1:5500/checkout.html";
+
+
+      }
+    }
+  }
+</script>
+<script>
+    function showLoading() {
+      const spinner = document.getElementById('loading-spinner');
+      spinner.classList.remove('hidden');
+      setTimeout(() => {
+        spinner.classList.add('hidden');
+      }, 2000); // Hide the spinner after 2 seconds (adjust as needed)
+    }
+  </script>
+  <script>
+    function addComment(itemId) {
+      const commentInput = document.getElementById(`comment-input-${itemId}`);
+      const commentText = commentInput.value.trim();
+
+      if (commentText !== '') {
+        const commentList = document.getElementById(`comments-${itemId}`);
+        const newComment = document.createElement('li');
+        newComment.textContent = commentText;
+        commentList.appendChild(newComment);
+
+        // Réinitialisez le champ de commentaire après l'ajout
+        commentInput.value = '';
+      }
+    }
+  </script>
+  
+  <script>
+    function signup(event) {
+      event.preventDefault();
+
+      const username = document.getElementById('username').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+	  console.log('Username:', username);
+      console.log('Email:', email);
+      console.log('Password:', password);
+	 // document.getElementById('signup-form').reset();
+    }
+  </script>
+  
+  
+  
+  <script>
+  function authenticate(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Vérification simplifiée (à remplacer par une vérification côté serveur)
+    if (username === 'admin' && password === 'adminpassword') {
+      // Authentification réussie
+      document.getElementById('login-form').reset();
+      document.getElementById('login-form').classList.add('hidden');
+      document.getElementById('add-item-button').classList.remove('hidden');
+    } else {
+      alert('Invalid credentials. Please try again.');
+    }
+  }
+
+  function showAddItemForm() {
+    // Ajoutez ici votre logique pour afficher le formulaire d'ajout d'article
+  }
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+  
+
+</body>
+</html>

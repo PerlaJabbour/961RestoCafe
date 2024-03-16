@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="checkout.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <body>
+ 
+  
+   
+
+ <div class="o1">
+ <h1 class="chekt">Contact information</h1>
+
+ 
+    <h2>Create an Account</h2>
+    <!--<form id="order-form" onsubmit="placeOrder(event)">-->
+	<label for="username">Username:</label>
+      <input type="text" id="txt_username" name="username" required>
+      
+      
+      <br><label for="email">Email:</label>
+      <input type="email" id="txt_email" name="email" required placeholder="Ex:Andrew@gmail.com">
+	  
+	  <br> <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required> 
+      
+
+      </select>
+
+      <br><button onclick="addClient()"><a href="order.html">Sign Up</a></button>
+
+<br><a href="order.html"><h4>Proceed your checkout without creating an account.</h4></a>
+    <!-- </form> -->
+  </section>
+ 
+
+      
+ 
+ <!-- </form> -->
+ </div>
+ <script src="projet.js"></script>
+   <!-- <script src="projet.js"></script> -->
+  <script>
+    function addClient(){
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    
+     
+    var txtusername=document.getElementById('txt_username');
+    var txtemail=document.getElementById('txt_email');
+    var password=document.getElementById('password');
+    var total=document.getElementById('carttotal');
+
+
+    var raw = JSON.stringify({
+      "username": txtusername.value,
+      "email": txtemail.value,
+      "password":password.value
+    });
+    
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
+    };
+    
+    fetch('http://localhost:3000/addClient', requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
+
+
+}
+  // function placeOrder(event) {
+  //   event.preventDefault();
+
+  //   const email = document.getElementById('email').value.trim();
+
+  //   // Client-side email validation
+  //   if (!isValidEmail(email)) {
+  //     alert('Please enter a valid email address.');
+  //     return;
+  //   }
+
+    // Additional validation logic for other fields can be added here
+
+    // Simulate form submission (replace this with actual form submission logic)
+  //   console.log('Form submitted successfully.');
+
+  //   // Reset the form
+  //   document.getElementById('order-form').reset();
+  // }
+
+  // function isValidEmail(email) {
+  //   // A simple email validation regex
+  //   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  //   return emailRegex.test(email);
+  // }
+</script>
+ 
+
+  </body>
+  </html>
